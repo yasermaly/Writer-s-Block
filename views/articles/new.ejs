@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/normalize.css">
+		<link rel="stylesheet" href="/skeleton.css">
+		<link rel="stylesheet" href="/new.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>Express Blog</title>
+</head>
+<body>
+    <header>
+		<h1>Create an Article</h1>
+		<nav>
+			<ul>
+				<li>
+					<a href="/">Home</a>
+				</li>
+				<li>
+					<a href="/articles">Articles Index</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<form action="/articles" method="POST">
+			<input type="text" name="title" placeholder="Title"/><br />
+            <input type="text" name="author" placeholder="Author"/><br />
+			<textarea name="body" placeholder="Body"></textarea><br />
+			<input type="submit" value="Publish Article" />
+		</form>
+	</main>
+</body>
+</html>

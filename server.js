@@ -28,6 +28,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 app.use("/authors", authorsController);
 app.use('/articles', articlesController);
+app.use(express.static(__dirname + '/public'));
 
 
 // ROUTES

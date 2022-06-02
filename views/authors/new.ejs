@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/normalize.css">
 		<link rel="stylesheet" href="/skeleton.css">
-		<link rel="stylesheet" href="/new.css">
+		<link rel="stylesheet" href="/authors-new.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
@@ -14,21 +14,21 @@
 </head>
 <body>
     <header>
-        <h1>Create an Author</h1>
+        <video muted loop autoplay>
+            <source src="https://i.imgur.com/kZh839k.mp4" type="video/mp4">
+        </video>
+        <h1>Writer's Block</h1>
         <nav>
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/authors">Authors Index</a>
-                </li>
-            </ul>
+            <a href="/" class="navlink">Home</a>
+            <a href="/authors" class="navlink">Authors</a>
         </nav>
     </header>
     <main>
+        <h4>Add a new Author</h4>
         <form action="/authors" method="POST">
-            <input type="text" name="name" />
+            <input placeholder="Image link" type="text" name="img" />
+            <input placeholder="Name" type="text" name="name" />
+            <input placeholder="Bio" type="text" name="bio" />
             <input type="submit" value="Create Author" />
         </form>
     </main>

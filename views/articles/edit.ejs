@@ -26,9 +26,9 @@
 	<main>
 		<h4>Article Attributes:</h4>
 		<form action="/articles/<%= article._id %>?_method=PUT" method="POST">
-			<input type="text" name="title" value="<%= article.title %>" /><br />
-			<input type="text" name="author" value="<%= article.author %>" /><br />
-			<textarea name="body"><%= article.body %></textarea><br />
+			<input placeholder="Title" type="text" name="title" value="<%= article.title %>" /><br />
+			<input placeholder="Author" type="text" name="author" value="<%= article.author %>" /><br />
+			<textarea placeholder="Body" name="body"><%= article.body %></textarea><br />
 			<input type="submit" value="Update Article" />
 		</form>
 	</main>

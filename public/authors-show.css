@@ -2,7 +2,6 @@
   body {
     width: 100vw;
     height: 100vh;
-    background: #f1f3f4;
     font-family: 'EB Garamond', serif;
   }
 
@@ -81,7 +80,7 @@ main {
 }
 
 img {
-    width: 60%;
+    width: 50%;
     height: auto;
     border-radius: 20px;
 }

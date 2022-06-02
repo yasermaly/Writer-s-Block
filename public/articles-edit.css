@@ -66,3 +66,7 @@ form {
 input, textarea {
   width: 400px;
 }
+
+textarea {
+  height: 300px;
+}

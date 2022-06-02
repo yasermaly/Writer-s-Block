@@ -6,32 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/skeleton.css">
-    <link rel="stylesheet" href="/edit.css">
+    <link rel="stylesheet" href="/authors-edit.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    <title>Edit Author</title>
+    <title>Edit <%= author.name %></title>
 </head>
 <body>
     <header>
-        <h1>Edit <%= author.name %>'s Info</h1>
+        <video muted loop autoplay>
+            <source src="https://i.imgur.com/kZh839k.mp4" type="video/mp4">
+        </video>
+        <h1>Writer's Block</h1>
         <nav>
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/authors">Authors Index</a>
-                </li>
-            </ul>
+                <a href="/" class="navlink">Home</a>
+                <a href="/authors" class="navlink">Authors</a>
         </nav>
     </header>
     <main>
-        <h2>Author Attributes:</h2>
+        <h4>Author Attributes:</h4>
         <form action="/authors/<%= author._id %>?_method=PUT" method="POST">
             <input type="text" name="img" value="<%= author.img %>" placeholder="Image link"/><br />
             <input type="text" name="name" value="<%= author.name %>" placeholder="Name"/><br />
-            <input type="text" name="bio" value="<%= author.bio %>" placeholder="Bio"/><br />
+            <textarea name="bio" placeholder="Bio"><%= author.bio %></textarea><br />
             <input type="submit" value="Update Author" />
         </form>
     </main>

@@ -2,7 +2,6 @@
   body {
     width: 100vw;
     height: 100vh;
-    background: #f1f3f4;
     font-family: 'EB Garamond', serif;
   }
 
@@ -50,6 +49,9 @@
       text-decoration: underline;
   }
 
+  a:hover {
+    text-decoration: underline;
+  }
   
  main {
     margin-left: 40px;
@@ -67,15 +69,6 @@
 
 
   @media screen and (max-width:800px) {
-    
-    header {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-
-  @media screen and (max-width:700px) {
     
     header {
       flex-direction: column;

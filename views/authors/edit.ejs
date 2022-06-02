@@ -29,7 +29,9 @@
     <main>
         <h2>Author Attributes:</h2>
         <form action="/authors/<%= author._id %>?_method=PUT" method="POST">
-            <input type="text" name="name" value="<%= author.name %>" /><br />
+            <input type="text" name="img" value="<%= author.img %>" placeholder="Image link"/><br />
+            <input type="text" name="name" value="<%= author.name %>" placeholder="Name"/><br />
+            <input type="text" name="bio" value="<%= author.bio %>" placeholder="Bio"/><br />
             <input type="submit" value="Update Author" />
         </form>
     </main>

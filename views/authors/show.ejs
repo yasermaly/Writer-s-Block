@@ -4,28 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Express Blog</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/skeleton.css">
+    <link rel="stylesheet" href="/authors-show.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title><%= author.name %></title>
 </head>
 <body>
     <header>
-        <h1>Show Page for <%= author.name %></h1>
+        <video muted loop autoplay>
+            <source src="https://i.imgur.com/kZh839k.mp4" type="video/mp4">
+        </video>
+        <h1>Writer's Block</h1>
         <nav>
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/authors">Author Index</a>
-                </li>
-            </ul>
+            <a href="/" class="navlink">Home</a>
+            <a href="/authors" class="navlink">Authors</a>  
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>Author Attributes:</h2>
-            <ul>
-                <li>Name: <%= author.name %></li>
-            </ul>
+    <main class="container">
+        <section>     
+            <img src=" <%= author.img %>">        
+        </section>
+        <section>     
+                <h4><%= author.name %></h4>        
+        </section>
+        <section class="bio">
+            <%= author.bio %>
         </section>
         <section>
             <a href="/authors/<%= author._id %>/edit">Edit</a>

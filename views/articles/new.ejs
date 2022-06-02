@@ -6,27 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/normalize.css">
 		<link rel="stylesheet" href="/skeleton.css">
-		<link rel="stylesheet" href="/new.css">
+		<link rel="stylesheet" href="/articles-new.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    <title>Express Blog</title>
+    <title>Publish an article</title>
 </head>
 <body>
     <header>
-		<h1>Create an Article</h1>
+		<video muted loop autoplay>
+            <source src="https://i.imgur.com/kZh839k.mp4" type="video/mp4">
+        </video>
+		<h1>Writer's Block</h1>
 		<nav>
-			<ul>
-				<li>
-					<a href="/">Home</a>
-				</li>
-				<li>
-					<a href="/articles">Articles Index</a>
-				</li>
-			</ul>
+			<a href="/" class="navlink">Home</a>
+			<a href="/articles" class="navlink">Articles</a>
 		</nav>
 	</header>
 	<main>
+		<h4>Publish an article</h4>
 		<form action="/articles" method="POST">
 			<input type="text" name="title" placeholder="Title"/><br />
             <input type="text" name="author" placeholder="Author"/><br />

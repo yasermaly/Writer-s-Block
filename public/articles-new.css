@@ -54,6 +54,10 @@ body {
       text-decoration: underline;
   }
 
+  main {
+    margin-top: 80px;
+}
+
   h4 {
       margin-left: 40px;
   }
@@ -64,4 +68,8 @@ body {
 
   input, textarea {
     width: 400px;
+  }
+
+  textarea {
+    height: 100px;
   }

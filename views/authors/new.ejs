@@ -10,7 +10,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    <title>Express Blog</title>
+    <title>Add a new author</title>
 </head>
 <body>
     <header>
@@ -28,7 +28,7 @@
         <form action="/authors" method="POST">
             <input placeholder="Image link" type="text" name="img" />
             <input placeholder="Name" type="text" name="name" />
-            <input placeholder="Bio" type="text" name="bio" />
+            <textarea placeholder="Bio" type="text" name="bio"></textarea>
             <input type="submit" value="Create Author" />
         </form>
     </main>

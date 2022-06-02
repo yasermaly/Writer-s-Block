@@ -4,36 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Express Blog</title>
+	<link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/skeleton.css">
+    <link rel="stylesheet" href="/articles-show.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Satisfy&display=swap" rel="stylesheet">
+    <title>Articles</title>
 </head>
 <body>
     <header>
+        <h1>Writer's Block</h1>
 		<nav>
-			<ul>
-				<li>
-					<a href="/">Home</a>
-				</li>
-				<li>
-					<a href="/articles">Articles Index</a>
-				</li>
-			</ul>
+			<a href="/" class="navlink">Home</a>
+			<a href="/articles" class="navlink">Articles</a>
 		</nav>
-		<h1><%= article.title %></h1>
-		<h5>written by: <%= article.author %></h5>
-
 	</header>
+	<h3 class="title"><%= article.title %></h3>
+	<h5 class="author">by: <%= article.author %></h5>
 	<main>
-		<section>
+		<section class="article">
 			<%= article.body %>
 		</section>
+		<section>
+            <a href="/articles/<%=article._id%>/edit">Edit</a>
+        </section>
         <section>
             <form action="/articles/<%=article._id%>?_method=DELETE" method="POST">
                 <input type="submit" value="Delete Article" />
             </form>
         </section>
-        <section>
-            <a href="/articles/<%=article._id%>/edit">Edit</a>
-        </section>
+
 	</main>
 </body>
 </html>

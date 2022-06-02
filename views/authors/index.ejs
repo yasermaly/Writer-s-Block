@@ -6,30 +6,32 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Express Blog</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/skeleton.css">
+    <link rel="stylesheet" href="/authors-index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Authors</title>
 </head>
 
 <body>
     <header>
-        <h1>Authors</h1>
+        <video muted loop autoplay>
+            <source src="https://i.imgur.com/kZh839k.mp4" type="video/mp4">
+        </video>
+        <h1>Writer's Block</h1>
         <nav>
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/authors/new">Create a new Author</a>
-                </li>
-            </ul>
+            <a href="/" class="navlink">Home</a>
+            <a href="/authors/new" class="navlink">Post a new Author</a>
         </nav>
     </header>
-
     <main>
-        <h2>List of Authors</h2>
+        <h4>Authors</h4>
         <ul>
             <% for(let i = 0; i < authors.length; i++){ %>
             <li>
-                <a href="/authors/<%= authors[i]._id %>"><%= authors[i].name %></a>
+                <a href="/authors/<%= authors[i]._id %>" class="author"><%= authors[i].name %></a>
             </li>
             <% } %>
         </ul>

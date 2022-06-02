@@ -6,32 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/skeleton.css">
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/articles-index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    <title>Express Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">    <title>Articles</title>
 </head>
 <body>
     <header>
         <h1>Writer's Block</h1>
         <nav>
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    
-                </li>
-            </ul>
+            <a href="/" class="navlink">Home</a>
+            <a href="/articles/new" class="navlink">Post a new article</a>
         </nav>
     </header>
-    <main>
-        <h2>List of Articles</h2>
+    <main class="container">
+        <h4>Featured Articles</h4>
         <ul>
             <% for(let i = 0; i < articles.length; i++){ %>
             <li>
-                <a href="/articles/<%=articles[i]._id%>"><%= articles[i].title %></a>
+                <a href="/articles/<%=articles[i]._id%>" class="article"><%= articles[i].title %></a>
             </li>
             <% } %>
         </ul>

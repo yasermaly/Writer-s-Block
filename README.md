@@ -2,7 +2,7 @@
 a full CRUD blog app that lets the user view, post, edit, and delete articles and author profiles
 
 # Technologies Used
-Node.js, Express.js, EJS, Heroku, HTML, CSS, JavaScript, Git, Google Fonts, Github
+Node.js, Express.js, EJS, Heroku, MongoDB, HTML, CSS, JavaScript, Git, Google Fonts, Github
 
 # Wireframes
 <img width="1049" alt="Screen Shot 2022-05-27 at 12 23 34 PM" src="https://user-images.githubusercontent.com/77906579/171860484-9da20977-66af-4b9e-9a55-81fe313ccea6.png">

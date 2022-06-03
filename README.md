@@ -1,5 +1,5 @@
 # Writer-s-Block
-a full CRUD blog app that lets the user view, post, edit, and delete articles and author profiles
+a full CRUD literature blog that lets the admin view, post, edit, and delete articles and author profiles
 
 # Technologies Used
 Node.js, Express.js, EJS, Heroku, MongoDB, HTML, CSS, JavaScript, Git, Google Fonts, Github

@@ -17,4 +17,4 @@ Node.js, Express.js, EJS, Heroku, MongoDB, HTML, CSS, JavaScript, Git, Google Fo
 The website is deployed on Heroku at this link: https://blockwriters.herokuapp.com/
 
 # Future enhancements
-Improved display styling of the articles to display in a grid.
+Improved display styling of the articles to display in a grid. Implement user authentication and the ability to create admin profiles to be able to edit articles/authors
